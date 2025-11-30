@@ -1,11 +1,33 @@
-import fastify = require("fastify");
+import Fastify from 'fastify';
+import fp from 'fastify-plugin';
+import { checkClassBaseAttributes } from './functions/generate-class-attr.function';
+import { NewClass } from './utils/character-classes';
 
-const app = fastify();
+// Example plugin
 
-app.get('/', async () => {
-  return { message: 'Hello Fastify + TS!' };
-});
 
-app.listen({ port: 3000 }).then(() => {
-  console.log('🚀 Servidor rodando em http://localhost:3000');
-});
+async function buildServer() {
+  const fastify = Fastify({ logger: false });
+
+  // Register plugin
+
+  return fastify;
+}
+
+async function start() {
+  try {
+    const app = await buildServer();
+    await app.listen({ port: 3000 });
+    console.log('Server running at http://localhost:3000');
+  } catch (err) {
+    console.error(err);
+    process.exit(1);
+  }
+}
+
+start();
+
+// const myNewClass: NewClass = {className: "Bard"};
+// checkClassBaseAttributes(myNewClass);
+
+// console.log(myNewClass);
