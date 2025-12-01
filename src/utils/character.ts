@@ -5,6 +5,9 @@ interface Character {
   name: string;
   level: number;
   class: string;
+  gender: string;
+  alignment: string;
+    age: number;
 
   // Vida e combate
   hp: number;

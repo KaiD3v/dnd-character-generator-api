@@ -1,0 +1,216 @@
+{
+    "races": [
+        {
+            "race": "Human",
+            "names": {
+                "male": [
+                    "Aric",
+                    "Baldric",
+                    "Cedric",
+                    "Darian",
+                    "Edric",
+                    "Garrick",
+                    "Luther"
+                ],
+                "female": [
+                    "Aria",
+                    "Brielle",
+                    "Celia",
+                    "Dalia",
+                    "Elira",
+                    "Marienne",
+                    "Sera"
+                ]
+            }
+        },
+        {
+            "race": "Elf",
+            "names": {
+                "male": [
+                    "Aelar",
+                    "Faelar",
+                    "Ilarion",
+                    "Theren",
+                    "Syllin",
+                    "Vaeril"
+                ],
+                "female": [
+                    "Aenwyn",
+                    "Keya",
+                    "Lia",
+                    "Meriele",
+                    "Seraphine",
+                    "Thiala"
+                ]
+            }
+        },
+        {
+            "race": "Dwarf",
+            "names": {
+                "male": [
+                    "Baern",
+                    "Durik",
+                    "Gimli",
+                    "Thorin",
+                    "Harbek",
+                    "Rurik"
+                ],
+                "female": [
+                    "Amber",
+                    "Helja",
+                    "Bardryn",
+                    "Diesa",
+                    "Sannl",
+                    "Vistra"
+                ]
+            }
+        },
+        {
+            "race": "Halfling",
+            "names": {
+                "male": [
+                    "Alton",
+                    "Cade",
+                    "Eldrin",
+                    "Lyle",
+                    "Marrec",
+                    "Perrin"
+                ],
+                "female": [
+                    "Callie",
+                    "Eida",
+                    "Lavinia",
+                    "Merla",
+                    "Paela",
+                    "Seraphina"
+                ]
+            }
+        },
+        {
+            "race": "Gnome",
+            "names": {
+                "male": [
+                    "Alston",
+                    "Boddynock",
+                    "Fonkin",
+                    "Wrenn",
+                    "Zook",
+                    "Dimble"
+                ],
+                "female": [
+                    "Bimpnottin",
+                    "Breena",
+                    "Donella",
+                    "Lilli",
+                    "Nyx",
+                    "Roywyn"
+                ]
+            }
+        },
+        {
+            "race": "Dragonborn",
+            "names": {
+                "male": [
+                    "Arjhan",
+                    "Balasar",
+                    "Donaar",
+                    "Ghesh",
+                    "Kriv",
+                    "Tarhun"
+                ],
+                "female": [
+                    "Akra",
+                    "Harann",
+                    "Kava",
+                    "Nala",
+                    "Sora",
+                    "Uadjit"
+                ]
+            }
+        },
+        {
+            "race": "Tiefling",
+            "names": {
+                "male": [
+                    "Akmenos",
+                    "Damakos",
+                    "Iados",
+                    "Kairon",
+                    "Skamos",
+                    "Zheren"
+                ],
+                "female": [
+                    "Akta",
+                    "Bryseis",
+                    "Criella",
+                    "Kallista",
+                    "Larissa",
+                    "Orianna"
+                ]
+            }
+        },
+        {
+            "race": "Half-Orc",
+            "names": {
+                "male": [
+                    "Dench",
+                    "Feng",
+                    "Gell",
+                    "Henk",
+                    "Thokk",
+                    "Ograk"
+                ],
+                "female": [
+                    "Baggi",
+                    "Engong",
+                    "Ovak",
+                    "Shautha",
+                    "Sutha",
+                    "Vola"
+                ]
+            }
+        },
+        {
+            "race": "Half-Elf",
+            "names": {
+                "male": [
+                    "Aelar",
+                    "Caeldrim",
+                    "Erevan",
+                    "Laeroth",
+                    "Soveliss",
+                    "Thamior"
+                ],
+                "female": [
+                    "Althaea",
+                    "Enna",
+                    "Ielenia",
+                    "Lunara",
+                    "Quelenna",
+                    "Sariel"
+                ]
+            }
+        },
+        {
+            "race": "Orc",
+            "names": {
+                "male": [
+                    "Grum",
+                    "Rok",
+                    "Ugruk",
+                    "Murag",
+                    "Sharn",
+                    "Thrag"
+                ],
+                "female": [
+                    "Bagga",
+                    "Dura",
+                    "Grisha",
+                    "Hura",
+                    "Sharek",
+                    "Vrilla"
+                ]
+            }
+        }
+    ]
+}
