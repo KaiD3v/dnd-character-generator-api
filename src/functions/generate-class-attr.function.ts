@@ -1,7 +1,6 @@
 import type { Attributes } from '../utils/character-attr.ts';
 import type { NewClass } from './../utils/character-classes.ts';
 
-
 const classList = [
     "Barbarian",
     "Bard",
@@ -17,7 +16,7 @@ const classList = [
     "Wizard"
 ]
 
-export function checkClassBaseAttributes(dndClass: NewClass) {
+export function generateClassBaseAttributes(dndClass: NewClass) {
 
     let newClassAttributes = {} as Attributes;
 

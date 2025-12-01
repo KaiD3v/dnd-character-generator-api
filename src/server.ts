@@ -1,7 +1,6 @@
 import Fastify from 'fastify';
-import fp from 'fastify-plugin';
-import { checkClassBaseAttributes } from './functions/generate-class-attr.function';
 import { NewClass } from './utils/character-classes';
+import { generateCharController } from './controller/generate-char.service';
 
 // Example plugin
 
@@ -10,6 +9,7 @@ async function buildServer() {
   const fastify = Fastify({ logger: false });
 
   // Register plugin
+  fastify.register(generateCharController);
 
   return fastify;
 }
