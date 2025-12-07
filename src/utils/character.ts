@@ -7,7 +7,7 @@ interface Character {
   class: string;
   gender: string;
   alignment: string;
-    age: number;
+  age: number;
 
   // Vida e combate
   hp: number;
