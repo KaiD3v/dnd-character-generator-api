@@ -1,1 +1,1 @@
-export const dndApi = 'https://www.dnd5eapi.co/api'
+export const dndApi = 'https://www.dnd5eapi.co/api/2014'
