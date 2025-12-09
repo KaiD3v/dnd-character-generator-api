@@ -1,10 +1,12 @@
+import { StarterEquipment } from "../functions/generate-char-starter-equipment";
 import { Attributes } from "./character-attr";
+import { NewClass } from "./character-classes";
 
 interface Character {
   // Identidade
   name: string;
   level: number;
-  class: string;
+  class: NewClass;
   gender: string;
   alignment: string;
   age: number;
@@ -40,16 +42,16 @@ interface Character {
 
   // Modificadores (calculados)
   modifiers: {
-    str: number;
-    dex: number;
-    con: number;
-    int: number;
-    wis: number;
-    cha: number;
+    strength: number;
+    dexterity: number;
+    constitution: number;
+    intelligence: number;
+    wisdom: number;
+    charisma: number;
   };
 
   // Proficiências
-  proficiencies: {
+  proficiencies?: {
     savingThrows: string[];
     skills: string[];
     weapons: string[];
@@ -60,11 +62,10 @@ interface Character {
 
   // Inventário e equipamentos
   equipment: {
-    armor?: string;
-    weapons: string[];
-    items: string[];
     gold: number;
-  };
+    items: StarterEquipment;
+};
+
 
   // Magias
   spells?: {

@@ -1,3 +1,6 @@
+// Remember:
+// Corrigir o erro quando clérigo é inserido como classe (starting_equipment_options está vindo como null)
+
 import { dndApi } from "../utils/dnd-api";
 
 interface EquipmentRef {
@@ -39,7 +42,7 @@ interface StartingEquipmentItem {
     quantity: number;
 }
 
-type StarterEquipment = StartingEquipmentItem[];
+export type StarterEquipment = StartingEquipmentItem[];
 
 
 function pickRandom<T>(arr: T[]): T {
@@ -102,6 +105,6 @@ export async function generateCharStarterEquipment(className: string) {
 
     } catch (error) {
         console.error("Erro buscando equipamento inicial:", error);
-        return [];
+        return [];  
     }
 }

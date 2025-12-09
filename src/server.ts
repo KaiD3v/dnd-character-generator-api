@@ -1,11 +1,7 @@
 import Fastify from 'fastify';
-import { NewClass } from './utils/character-classes';
 import { generateCharController } from './controller/generate-char.service';
-import { generateCharHp } from './functions/generate-char-hp.function';
 import { generateCharName } from './functions/generate-char-name.function';
-import { Character } from './utils/character';
-import { genereateCharacterModifiers } from './functions/generate-char.mod';
-import { generateCharStarterEquipment } from './functions/generate-char-starter-equipment';
+
 
 // Example plugin
 
@@ -32,7 +28,7 @@ async function start() {
 
 start();
 
-console.log(generateCharName({race: 'Gnome', gender: 'male'}));
+console.log(generateCharName({race: 'Human', gender: 'male'}));
 
 const teste = {
   strength: 15,
@@ -43,8 +39,8 @@ const teste = {
   charisma: 8
 }
 
-console.log(genereateCharacterModifiers(teste));
+// console.log(genereateCharacterModifiers(teste));
 
-console.log(`class hp:`, generateCharHp({ className: "Barbarian", level: 1 }, 2));
+// console.log(`class hp:`, generateCharHp({ className: "Barbarian", level: 1 }, 2));
 
-generateCharStarterEquipment("monk").then(e => console.log(e));
+// generateCharStarterEquipment("wizard").then(e => console.log(e));
