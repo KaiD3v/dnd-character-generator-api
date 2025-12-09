@@ -16,6 +16,7 @@ interface CharacterBody{
 
 export class CharacterService { 
     generateCharacterClassAttributes(dndClass: NewClass): NewClass {
+        let myClass = dndClass;
         generateClassBaseAttributes(dndClass);
         return dndClass;
     }

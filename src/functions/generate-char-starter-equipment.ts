@@ -21,7 +21,7 @@ interface ChoiceOption {
         desc: string;
         choose: number;
         type: "equipment";
-        from: any; // equipamento por categoria, etc.
+        from: any;
     };
 }
 
