@@ -1,7 +1,7 @@
 import Fastify from 'fastify';
 import { generateCharController } from './controller/generate-char.service';
 import { generateCharName } from './functions/generate-char-name.function';
-
+import cors from '@fastify/cors';
 
 // Example plugin
 
@@ -11,6 +11,9 @@ async function buildServer() {
 
   // Register plugin
   fastify.register(generateCharController);
+  fastify.register(cors, {
+    origin: '*'
+  })
 
   return fastify;
 }
